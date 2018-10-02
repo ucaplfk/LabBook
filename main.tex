@@ -47,6 +47,8 @@
 \DeclarePairedDelimiter\bra{\langle}{\rvert}
 \DeclarePairedDelimiter\ket{\lvert}{\rangle}
 \DeclarePairedDelimiterX\braket[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
+\usepackage{nomencl}
+\makenomenclature
 
 \begin{document}
 
@@ -128,14 +130,19 @@ Dr Jonathan Pritchard \textsc{Morton} \\[0.5cm]
 
   	%\input{002.Acknowledgments}
     %\input{01.outline}
-   
+   \input{nom}
 
   	\tableofcontents
     
     \listoffigures
  
 	\listoftables
-
+  
+	\renewcommand{\nomname}{List of Symbols}
+    \printnomenclature
+    
+    
+    
 %----------------------------------------------------------------------------------------
 %	MAIN MATTER
 %----------------------------------------------------------------------------------------
